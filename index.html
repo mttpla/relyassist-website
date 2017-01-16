@@ -3,8 +3,39 @@
 <html >
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/relyassistllc-com.css">
+    <link rel="icon" href="./favicon.ico">    
     <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+ 
+    <link href="/css/jquery.bxslider.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="./css/relyassistllc-com.css">
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="/js/jquery.bxslider.min.js"></script>
+
+    <script>
+    $( function() {
+       $( "#simploQuickFacts" ).accordion({
+          active: false, 
+          collapsible: true 
+         });
+    } );
+
+   $(document).ready(function(){
+      $('.bxslider').bxSlider({
+        mode: 'fade',
+        captions: true,
+        auto: true,
+        autoControls: true,
+      });
+    });
+    
+  $( function() {
+    $( "#mainTabs" ).tabs();
+  } );
+  </script>
      
 <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
 <script type="text/javascript">
@@ -19,15 +50,164 @@
 </head>
 <body id="body">
 
-<h1 >Rely Assist, LLC</h1>
-<img src="./imgs/under-construction.png" alt="Under Costruction" class="topLeft">
+<img src="./imgs/relyassist/RelyAssistLogo300x114.png" alt="Rely Assist LLC" class="relyAssistLogo">
+<!-- <img src="./imgs/under-construction.png" alt="Under Costruction" class="topLeft"> -->
 
-<img src="./imgs/simplo/simplo_field_color.png" alt="Simplo Jar" class="simploLogo">
+<ul class="bxslider">
+  <li><img src="/imgs/slider/simploLogo-400px.png" /></li>
+  <li><img src="/imgs/slider/nozzleCloseUp-400px.jpg" title="Revolutionary nozzle starts the vacuum" /></li>
+  <li><img src="/imgs/slider/SimploJarCapRemoved-400px.jpg" title="The Simplo Jar" /></li>
+  <li><img src="/imgs/slider/SimploBox-400px.jpg" title="Vacuum filled bottle reduces the need of additional tools"/></li>
+  <li><img src="/imgs/slider/VacuumBag-400px.jpg" title="The bag extends the life of the vacuum contained inside the jar itself"/></li>
+</ul>
+
+<div id="mainTabs">
+  <ul>
+    <li><a href="#simploInfo">Simplo</a></li>
+    <li><a href="#simploSpecs">Specifications</a></li>
+    <li><a href="#ucvdInfo">U.C.V.D Technology</a></li>
+    <li><a href="#simploOrder">Order</a></li>
+  </ul>
+  <div id="simploInfo">
+   <p>
+   <img src="/imgs/slider/SimploJarCapRemoved-400px.jpg" class="leftImg" alt="The Simplo Jar"/> 
+   <div class="des">
+        <h1>Oil Sampling Made Easy</h1>
+   <ul>
+   <li><b>QUICK</b>: draws almost any viscosity quickly</li>
+   <li><b>EASY</b>: pre-charged vacuum elimintes the need for additional sampling tools </li>
+   <li><b>CONVINIENT</b>: virtually ands-free sampling </li>
+   <li><b>CLEAN</b>: prevents oil spillage during sampling</li>
+   <li><b>SURE</b>: avoids potential enviroment cross-contamination </li>
+   </ul>
+   </div>
+   
+   </p>
+  </div>
+   <div id="simploSpecs">
+   <p>
+   <div class="des">
+   <h1>Specifications</h1>
+   <ul>
+   <li>High Desnity PETG</li>
+   <li>100 ml/3.3oz. capacity</li>
+   <li>85°C/185°F max temperature</li>
+   <li>Applicable to any viscosity range</li>
+   <li>Average Cleaness qualification</li>
+   <ul>
+   <li>ISO (4406) 11/9/4</li>
+   <li>NAS (1638) 1</li>
+   </ul>
+   <li>US Patented 8.973.448</li>
+   </ul>
+   </p>
+   </div>
+   </div>
+  <div id="ucvdInfo">
+   <p>
+   <a href="http://www.mecoil.net"><img src="/imgs/MecoilLogo-400px.png" class="leftImg" alt="Mecoil Diagnosi Meccanche"/></a>
+   <div class="des">
+   <h1>Ultra Clean Vacuum Device</h1>
+   <div>Technology proudly made in Italy by Mecoil. More details on Mecoil web site, 
+      <a href="http://www.mecoil.net/en/discover-u-c-v-d-2/">discover UCVD</a></div>
+   </p>
+  </div>
+  </div>
+  <div id="simploOrder">
+   <p>
+   <img src="/imgs/slider/SimploBox-400px.jpg" class="leftImg" alt="Simplo box"/>
+    <div class="des">
+      <h1>We are pleased to offer you the revolutionary Simplo jar</h1> 
+     <div>
+        To place an order, please contact <a href="mailto:info@relyassistllc.com">info@relyassistllc.com</a>.
+     <br>
+      The Simplo box contains:
+    <ul>
+    <li>30 Simplo Jars
+    <li>30 sampling tubes
+    </ul>
+    
+    </div>
+   </p> 
+  </div>
+</div>
+
+<br style="clear: both;" />
+
+<h1>Simplo Quick Facts:</h1>
+<div id="simploQuickFacts">  
+  <h3>What is the cleanliness level of the bottle?</h3>
+  <div>
+    <p>The bottle is considered ultra clean. The average cleanliness of each bottle is ISO (4406) 11/9/4 or NAS (1638) 1.</p>
+  </div>
+  <h3>What is the sample bottle material?</h3>
+  <div>
+    <p>The bottle is made of high density PETG.</p>
+  </div>
+  <h3>What limitations are there regarding lubricant types you can put in the Simplo jar?</h3>
+  <div>
+    <p>The Simplo jar works with almost all kinds of lubricants, except gasoline. 
+       Oils and coolants works well with the Simplo jar.</p>
+  </div>
+    <h3>Are there any temperature limitations with the Simplo jar?</h3>
+  <div>
+    <p>The Simplo jar works with temperatures up to 185°F. </p>
+  </div>
+     <h3>Will the Simplo jar work with heavy duty lubes such as 680 gear lubes?</h3>
+  <div>
+    <p>The Simplo jar works with essentially any viscosity. 
+       The only difference is that the heavier lubricants will take longer to draw.</p>
+  </div>
+    <h3>What if I accidentally open the valve and release the vacuum inside the bottle 
+        before I’m ready to collect my sample? </h3>
+  <div>
+    <p>The thread on the Simplo jar will work with a standard vacuum pump if you accidentally exhaust the vacuum.</p>
+  </div>
+  <h3>What is the shelf life of the Simplo jar?</h3>
+  <div>
+    <p>Each Simplo jar is vacuum packed in a bag. This extends the life of the vacuum contained inside the jar itself. 
+       As long as the bottle remains inside the vacuum bag, the Simplo jar will retain its vacuum. 
+       It is recommended that the vacuum bag be removed immediately prior to sampling, 
+       but it should last up to 1 month if opened early. </p>
+  </div>
+    <h3>Will the Simplo jar leak during shipping?</h3>
+  <div>
+    <p>Once the sample has been collected, the valve needs to be turned off. 
+       Once the valve has been closed, the bottle should not leak. 
+       Each Simplo jar comes with a safety cap originally designed 
+       to prevent damage to the nozzle and valve on top of the jar. 
+       This Safety cap is also a secondary line of protection against leakage, 
+       although some standard sample bottle lids do work with the jar.</p>
+  </div>
+   <h3>Can I use the Simplo to pull a sample from my filter cart?</h3>
+  <div>
+    <p>Of course! You can use the minimess port for the collection point, you will just need a minimess adapter.</p>
+  </div>
+   <h3>What is the maximum length of tubing that can be used with the Simplo jar?</h3>
+  <div>
+    <p>Based on the total bottle volume and the vacuum contained therein, 
+       you will want to use a tube that is no longer than 5 feet or 1.6 meters. 
+       But a tube this long is not recommended unless absolutely necessary. </p>
+  </div>
+
+</div>
+<br>
+<br>
+<br>
+<div class="aboutUSfooter">
+<h3>About us</h3>
+<p><b>RelyAssist</B> was formed to bring innovative industrial products for machinery lubrication and oil analysis 
+    to companies around the globe. 
+    Our vision is to provide premier products and services to corporations 
+    where equipment criticality is a leading variable in their ability to provide high-quality goods and services.
+</p>
+</div>
 
 <br>
 <br>
 <br>
-<h6>RelyAssist, LLC <i class="fa fa-circle"></i> P.O. Box 141252, Broken Arrow, OK 74014, USA <i class="fa fa-circle"></i> <a href="mailto:info@relyassistllc.com">info@relyassistllc.com</a></h6>
+<h4>RelyAssist, LLC <i class="fa fa-circle"></i> P.O. Box 141252, Broken Arrow, OK 74014, USA <i class="fa fa-circle"></i> 
+    <a href="mailto:info@relyassistllc.com">info@relyassistllc.com</a></h4>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
