@@ -1,3 +1,17 @@
+
+.relyAssistLogo{
+    float: left;
+}
+
+.socialGroup{
+    float: right;
+}
+
+.socialItem{
+    display: inline-block;
+
+}
+
 .leftImg{
     float: left; 
     margin: 0px 15px 15px 0px;

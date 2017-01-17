@@ -14,14 +14,22 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="/js/jquery.bxslider.min.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
 
     <script>
-    $( function() {
+    $(
+      function() {
+        $( "#mainTabs" ).tabs();
+      });
+ 
+    $(function() {
        $( "#simploQuickFacts" ).accordion({
           active: false, 
           collapsible: true 
          });
-    } );
+      } 
+
+    );
 
    $(document).ready(function(){
       $('.bxslider').bxSlider({
@@ -32,9 +40,6 @@
       });
     });
     
-  $( function() {
-    $( "#mainTabs" ).tabs();
-  } );
   </script>
      
 <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
@@ -50,8 +55,20 @@
 </head>
 <body id="body">
 
+<div id="header">
 <img src="./imgs/relyassist/RelyAssistLogo300x114.png" alt="Rely Assist LLC" class="relyAssistLogo">
 <!-- <img src="./imgs/under-construction.png" alt="Under Costruction" class="topLeft"> -->
+
+<div class="socialGroup">
+  <div class="socialItem">
+    <a href="https://www.linkedin.com/company/16158933" target="_blank"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a> 
+  </div>
+  <div class="socialItem">
+    <a href="https://twitter.com/RelyAssistLLC" target="_blank"><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a>
+  </div>
+</div>
+
+</div>
 
 <ul class="bxslider">
   <li><img src="/imgs/slider/simploLogo-400px.png" /></li>
@@ -66,7 +83,8 @@
     <li><a href="#simploInfo">Simplo</a></li>
     <li><a href="#simploSpecs">Specifications</a></li>
     <li><a href="#ucvdInfo">U.C.V.D Technology</a></li>
-    <li><a href="#simploOrder">Order</a></li>
+    <li><a href="#simploOrder">Place a Order</a></li>
+    <li><a href="#simploDownload">Download</a></li>
   </ul>
   <div id="simploInfo">
    <p>
@@ -105,11 +123,11 @@
    </div>
   <div id="ucvdInfo">
    <p>
-   <a href="http://www.mecoil.net"><img src="/imgs/MecoilLogo-400px.png" class="leftImg" alt="Mecoil Diagnosi Meccanche"/></a>
+   <a target="_blank" href="http://www.mecoil.net"><img src="/imgs/MecoilLogo-400px.png" class="leftImg" alt="Mecoil Diagnosi Meccanche"/></a>
    <div class="des">
    <h1>Ultra Clean Vacuum Device</h1>
    <div>Technology proudly made in Italy by Mecoil. More details on Mecoil web site, 
-      <a href="http://www.mecoil.net/en/discover-u-c-v-d-2/">discover UCVD</a></div>
+      <a target="_blank" href="http://www.mecoil.net/en/discover-u-c-v-d-2/">discover UCVD</a></div>
    </p>
   </div>
   </div>
@@ -118,7 +136,7 @@
    <img src="/imgs/slider/SimploBox-400px.jpg" class="leftImg" alt="Simplo box"/>
     <div class="des">
       <h1>We are pleased to offer you the revolutionary Simplo jar</h1> 
-     <div>
+     
         To place an order, please contact <a href="mailto:info@relyassistllc.com">info@relyassistllc.com</a>.
      <br>
       The Simplo box contains:
@@ -129,6 +147,20 @@
     
     </div>
    </p> 
+  </div>
+  <div id="simploDownload">
+   <p><div class="des"><h1>More informations:</h1>
+      <ul>
+      <li><i class="fa fa-file-pdf-o fa-2x" aria-hidden="true"></i> 
+          <a href="https://drive.google.com/file/d/0B-xijXVmfcT0SUNDX0dLLWdZNkE/view?usp=sharing" target="_blank">
+                Simplo Insert</a> (9.1 MB) </li>
+      <li><i class="fa fa-file-pdf-o fa-2x" aria-hidden="true"></i> 
+          <a href="https://drive.google.com/file/d/0B-xijXVmfcT0cUdvNlE1RnY5em8/view?usp=sharing" target="_blank">
+               Simplo Flyer</a> ( < 1 MB) </li>
+      </ul>
+      </ul>
+    </div>
+    </p>
   </div>
 </div>
 
@@ -203,12 +235,14 @@
 </p>
 </div>
 
+<div id="footer">
 <br>
 <br>
 <br>
 <h4>RelyAssist, LLC <i class="fa fa-circle"></i> P.O. Box 141252, Broken Arrow, OK 74014, USA <i class="fa fa-circle"></i> 
     <a href="mailto:info@relyassistllc.com">info@relyassistllc.com</a></h4>
 
+</div>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
