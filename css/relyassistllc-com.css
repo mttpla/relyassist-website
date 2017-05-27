@@ -25,6 +25,16 @@
     height: 90px;
 }
 
+.relyAssistLogoAbouUSLeft{
+    float: left;
+    height: 71px;
+}
+
+.relyAssistLogoAbouUSRight{
+    float: right;
+    height: 71px;
+}
+
 .socialGroup{
     float: right;
     position: relative;
