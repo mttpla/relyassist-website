@@ -47,33 +47,15 @@
 
 }
 
-.leftImg{
-    float: left; 
-    margin: 0px 15px 15px 0px;
-    }
-
-.des{ 
-    height: 400px;
+.rightImg{
+    float: right; 
     }
 
 .simploVideosArea{
     text-align: center;
 }
 
-.simploInfoDes{
-    margin-left: 340px;
-}
-
-.simploOrderDes{
-    margin-left: 600px;
-}
-
-.simploSpecs{
-    margin-left: 530px;
-}
-
-li{
-    
+li{   
     padding-bottom: 20px;
 }
 
