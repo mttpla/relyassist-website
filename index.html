@@ -19,10 +19,21 @@
     <script src="https://apis.google.com/js/api.js"></script>
     <script src="/js/buynow.shopify.js"></script>
     <script>
-    $(
-      function() {
-        $( "#mainTabs" ).tabs();
-      });
+      if (location.hash) {
+        setTimeout(function() {
+          window.scrollTo(0, 0);
+        }, 1);
+      }
+      
+    $(function() {
+      $( "#mainTabs" ).tabs(
+                {
+                   activate: function(event, ui) {
+                      history.replaceState(undefined, undefined, "#"+ui.newPanel.attr('id')); 
+                    }
+              }
+       );         
+     });
  
     $(function() {
        $( "#simploQuickFacts" ).accordion({
