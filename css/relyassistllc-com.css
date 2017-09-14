@@ -125,3 +125,13 @@ img.simploLogo {
         padding: 20px;
 }
 
+div.lastUpdated{
+    text-align: center;    
+}
+
+div.inline{
+    display: inline-block;
+}
+
+
+
