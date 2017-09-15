@@ -133,5 +133,7 @@ div.inline{
     display: inline-block;
 }
 
-
+div.linkedInProfile{
+    text-align: center;
+}
 
