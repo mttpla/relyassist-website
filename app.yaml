@@ -18,6 +18,10 @@ handlers:
 - url: /engine/.*
   script: _go_app
 
+- url: /amp-.*
+  static_files: amp-index.html
+  upload: amp-index.html
+
 - url: /.*
   static_files: index.html
   upload: index.html
