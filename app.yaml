@@ -22,6 +22,10 @@ handlers:
   static_files: sitemap.txt
   upload: sitemap.txt
 
+- url: /simploBuy.html
+  static_files: simploBuy.html
+  upload: simploBuy.html
+
 - url: /amp-.*
   static_files: amp-index.html
   upload: amp-index.html
