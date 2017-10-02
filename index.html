@@ -229,17 +229,25 @@
 
 
 <div id="simploOrder">
- 
-   <img src="./imgs/slider/SimploBox-400px.jpg" class="rightImg" alt="Simplo box"/> 
+      <img src="./imgs/slider/SimploBox-400px.jpg" class="rightImg" alt="Simplo box"/> 
+
    <div class="des simploOrderDes">       
     <h1>We are pleased to offer you the revolutionary Simplo jar</h1>
     <br><br>
-    The Simplo box contains:
+        The 30 Simplo box contains:
     <br>
     <ul class="fa-ul">
      <li><i class="fa-li fa fa-check-square"></i>30 Simplo Jars</li>
        <li><i class="fa-li fa fa-check-square"></i>30 sampling tubes</li>
        </ul>
+     <br><br>
+        The 10 Simplo box contains:
+    <br>
+    <ul class="fa-ul">
+     <li><i class="fa-li fa fa-check-square"></i>10 Simplo Jars</li>
+       <li><i class="fa-li fa fa-check-square"></i>10 sampling tubes</li>
+       </ul>
+    
        <br>
        For large orders, please contact us at 
        <script type="text/javascript" >
@@ -322,7 +330,155 @@ document.write("<a href='mailto:"+link+"'>"+link+"</a>")
       </div>
 
       <br style="clear: both;" />  
-      <div id='product-component-ae32f82f2f6'></div>
+
+     <div id='collection-component-afb707291b3'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'relyassist.myshopify.com',
+      apiKey: '1afd6e88669c84e7d6fd743232288fa8',
+      appId: '6',
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('collection', {
+        id: 339639243,
+        node: document.getElementById('collection-component-afb707291b3'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "buttonDestination": "modal",
+    "variantId": "all",
+    "isButton": false,
+    "contents": {
+      "imgWithCarousel": false,
+      "variantTitle": false,
+      "options": false,
+      "description": false,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "VIEW PRODUCT"
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "background-color": "#563f71",
+        ":hover": {
+          "background-color": "#4d3966"
+        },
+        ":focus": {
+          "background-color": "#4d3966"
+        }
+      }
+    }
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "styles": {
+      "button": {
+        "background-color": "#563f71",
+        ":hover": {
+          "background-color": "#4d3966"
+        },
+        ":focus": {
+          "background-color": "#4d3966"
+        }
+      },
+      "footer": {
+        "background-color": "#ffffff"
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "background-color": "#563f71",
+        ":hover": {
+          "background-color": "#4d3966"
+        },
+        ":focus": {
+          "background-color": "#4d3966"
+        }
+      }
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#563f71",
+        ":hover": {
+          "background-color": "#4d3966"
+        },
+        ":focus": {
+          "background-color": "#4d3966"
+        }
+      }
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  }
+}
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+
 
       <h1>Simplo Quick Facts:</h1>
       <div id="simploQuickFacts">  
