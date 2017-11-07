@@ -137,3 +137,38 @@ div.linkedInProfile{
     text-align: center;
 }
 
+div.testimonial-frame{
+  max-width: 950px;
+  text-align: center;
+  margin: auto;
+}
+
+div.testimonial {
+  text-align:center;     
+  width: 350px;    
+  margin: 25px;    
+  padding: 15px;
+  position:relative;   
+  border:4px solid purple;    
+  border-radius: 30px 30px;     
+  
+  display:inline-block;    
+  background: Gainsboro; /* Old browsers */
+}
+
+div.testimonial-name{
+  text-align: center;
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+div.testimonial-date{
+  text-align: right;
+  font-weight: bold;
+  padding-bottom: 15px;
+
+}
+
+ 
+
+
